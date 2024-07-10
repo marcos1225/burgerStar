@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger star</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="banner">
+    <header class="container-header">
+        <div class="header-nombre">
+            <p>Burger <span class="header-nombre-estilo">St🌠r</span></p>
+        </div>
+        <div class="header-input">
+            <input class="header-campo" type="search" name="buscar" id="buscar" placeholder="Buscar">
+            <button class="header-button">
+                <svg class="svg-header" xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+            </button>
+        </div>
+        </header>
+    </div> <!--fin div banner-->
+   
+    <section class="container-favoritos">
+        <div class="container-card-favoritos card-img-1">
+            <div class="card-image"></div>
+            <div class="card-container-info">
+                <div class="card-nombre">
+                    <h2>Clásica</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-card-favoritos card-img-2">
+            <div class="card-image"></div>
+            <div class="card-container-info">
+                <div class="card-nombre">
+                    <h2>BBQ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-card-favoritos card-img-3">
+            <div class="card-image"></div>
+            <div class="card-container-info">
+                <div class="card-nombre">
+                    <h2>De Pavo</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-card-favoritos card-img-4">
+            <div class="card-image"></div>
+            <div class="card-container-info">
+                <div class="card-nombre">
+                    <h2>Vegana</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-card-favoritos card-img-5">
+            <div class="card-image"></div>
+            <div class="card-container-info">
+                <div class="card-nombre">
+                    <h2>Mexicana</h2>
+                </div>
+            </div>
+        </div>
+    </section> <!--fin container favoritos-->
+
+    <section class="Nosotros">
+        <div class="Nosotros-info">
+        <h2>Quienes Somos?</h2>
+        <p>Burger Star es un restaurante que ofrece una experiencia culinaria excepcional, nuestro menú satisface todos los gustos. Ubicado en Santa Cruz, Guanacaste, no te quedes con las ganas, <strong>te esperamos!</strong>.</p>
+        </div>
+    </section>
+    <main class="Menu">¨
+        <h1>Hamburguesas</h1>
+    <div class="container-grid-hamburguesas">
+        <div class="container-card-hamburguesas sombra oferta1">
+            <div class="card-image-hamburguesa">
+                <img class="imagen-hamburgesa" src="img/hamburguesa_mexicana.webp" alt="hamburguesa_bbq">
+                <input type="checkbox" id="favorite-checkbox-1" class="favorite-checkbox">
+                <label for="favorite-checkbox-1" class="card-boton-favorito">
+                    <svg class="svg-favorito posicion-derecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                </label>
+            </div>
+            <div class="card-hamburguesa">
+                <div class="card-hamburguesa-nombre">
+                    <h2>Star Mexicana:</h2>
+                    <p>carne de res sazonada al estilo mexicano, guacamole fresco, pico de gallo, queso Pepper Jack derretido, chiles jalapeños y crispy tortilla strips, todo entre pan de hamburguesa de maíz tostado</p>
+                </div>
+                <div class="card-hamburguesa-precio">
+                   <p class="card-oferta"><strong>₡</strong>4500</p>
+                </div>
+            </div>
+        </div> <!--fin de container card hamburguesas-->
+        
+        <div class="container-card-hamburguesas sombra oferta1">
+            <div class="card-image-hamburguesa">
+                <img class="imagen-hamburgesa" src="img/hamburguesa_bbq.webp" alt="hamburguesa_bbq">
+                <input type="checkbox" id="favorite-checkbox-2" class="favorite-checkbox">
+                <label for="favorite-checkbox-2" class="card-boton-favorito">
+                    <svg class="svg-favorito posicion-derecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                </label>
+            </div>
+            <div class="card-hamburguesa">
+                <div class="card-hamburguesa-nombre">
+                    <h2>Star BBQ:</h2>
+                    <p>Incluye carne de res sazonada, salsa BBQ, queso cheddar derretido, tocino crujiente, lechuga y tomate frescos, cebolla caramelizada</p>
+                </div>
+                <div class="card-hamburguesa-precio">
+                    <p><strong>₡</strong>4000</p>
+                </div>
+            </div>
+        </div><!--fin de container card hamburguesas-->
+        
+        <div class="container-card-hamburguesas sombra oferta1">
+            <div class="card-image-hamburguesa">
+                <img class="imagen-hamburgesa" src="img/hamburguesaclasica.webp" alt="hamburguesa_bbq">
+                <input type="checkbox" id="favorite-checkbox-3" class="favorite-checkbox">
+                <label for="favorite-checkbox-3" class="card-boton-favorito">
+                    <svg class="svg-favorito posicion-derecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                </label>
+            </div>
+            <div class="card-hamburguesa">
+                <div class="card-hamburguesa-nombre">
+                    <h2>Star Clásica:</h2>
+                    <p>incluye carne de res jugosa, queso americano derretido, tocino crujiente, lechuga, tomate, cebolla y salsa especial</p>
+                </div>
+                <div class="card-hamburguesa-precio">
+                    <p><strong>₡</strong>3000</p>
+                </div>
+            </div>
+        </div> <!--fin de container card hamburguesas-->
+        
+        <div class="container-card-hamburguesas sombra oferta1">
+            <div class="card-image-hamburguesa">
+                <img class="imagen-hamburgesa" src="img/hamburguesa_de_pavo.webp" alt="hamburguesa_bbq">
+                <input type="checkbox" id="favorite-checkbox-4" class="favorite-checkbox">
+                <label for="favorite-checkbox-4" class="card-boton-favorito">
+                    <svg class="svg-favorito posicion-derecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                </label>
+            </div>
+            <div class="card-hamburguesa">
+                <div class="card-hamburguesa-nombre">
+                    <h2>Star Pavo:</h2>
+                    <p>Incluye carne de pavo magra, sazonada con condimentos suaves y acompañada de queso suave opcional, junto con ingredientes frescos como lechuga, tomate, cebolla y aguacate</p>
+                </div>
+                <div class="card-hamburguesa-precio">
+                    <p><strong>₡</strong>4750</p>
+                </div>
+            </div>
+        </div> <!--fin de container card hamburguesas-->
+        
+        <div class="container-card-hamburguesas sombra oferta1">
+            <div class="card-image-hamburguesa">
+                <img class="imagen-hamburgesa" src="img/hamburguesa_vegana.webp" alt="hamburguesa_bbq">
+                <input type="checkbox" id="favorite-checkbox-5" class="favorite-checkbox">
+                <label for="favorite-checkbox-5" class="card-boton-favorito">
+                    <svg class="svg-favorito posicion-derecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                </label>
+            </div>
+            <div class="card-hamburguesa">
+                <div class="card-hamburguesa-nombre">
+                    <h2>Star Vegana:</h2>
+                    <p>Incluye lechuga, tomate, cebolla morada, aguacate, todo servido entre dos suaves panes integrales o de trigo</p>
+                </div>
+                <div class="card-hamburguesa-precio">
+                    <p><strong>₡</strong>2500</p>
+                </div>
+            </div>
+        </div> <!--fin de container card hamburguesas-->
+        
+        <div class="container-card-hamburguesas sombra oferta1">
+            <div class="card-image-hamburguesa">
+                <img class="imagen-hamburgesa" src="img/hamburguesa_bbq.webp" alt="hamburguesa_bbq">
+                <input type="checkbox" id="favorite-checkbox-6" class="favorite-checkbox">
+                <label for="favorite-checkbox-6" class="card-boton-favorito">
+                    <svg class="svg-favorito posicion-derecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                </label>
+            </div>
+            <div class="card-hamburguesa">
+                <div class="card-hamburguesa-nombre">
+                    <h2>Star Doble Carne:</h2>
+                    <p>La hamburguesa Doble incluye doble carne de res sazonada, salsa BBQ, queso cheddar derretido, tocino crujiente, lechuga, tomate, cebolla caramelizada, pepinillos</p>
+                </div>
+                <div class="card-hamburguesa-precio">
+                    <p><strong>₡</strong>5000</p>
+                </div>
+            </div>
+        </div> <!--fin de container card hamburguesas-->
+    </div> <!--fin main grid hamburguesas-->
+</main>
+<footer class="container-footer">
+    <p>&copy; 2024 Marcos González. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

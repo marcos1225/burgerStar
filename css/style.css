@@ -1,0 +1,356 @@
+:root {
+    --color-primario: #C81912;
+    --color-negro: #151515;
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-titulos: 'Permanent Marker', cursive;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-principal);
+    overflow-x: hidden;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.banner {
+    background-image: url(../img/banner-proyecto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    position: relative;
+}
+
+.container-header {
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: grid;
+    place-content: center;
+}
+
+.header-nombre {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-family: var(--fuente-titulos);
+}
+
+.header-nombre-estilo {
+    color: #FDE767;
+    font-weight: bold;
+}
+
+.header-input {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.svg-header {
+    color: white;
+    background-color: none;
+}
+
+.header-campo {
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.header-button {
+    background-color: inherit;
+    border: none;
+}
+
+.header-button:hover {
+    cursor: pointer;
+}
+.Nosotros {
+    background-image: url(../img/local.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    z-index: 1; 
+}
+
+.Nosotros::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0; 
+}
+.Nosotros-info {
+    text-align: center;
+    padding: 2rem;
+}
+.Nosotros-info h2, .Nosotros-info p {
+    position: relative;
+    color: white;
+    z-index: 1; 
+}
+
+.Nosotros-info h2 {
+    font-family: var(--fuente-titulos);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.Nosotros-info p {
+    text-align: left;
+    font-size: 2.5rem;
+    
+}
+.Menu h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--fuente-titulos);
+}
+
+@media (min-width: 768px) {
+    .container-header {  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-input, .header-nombre {
+        margin: 1rem;
+    }
+}
+
+.container-favoritos {
+    display: flex;
+    flex-wrap: nowrap; 
+    white-space: nowrap; 
+    padding: 1rem; 
+    overflow-x: scroll;
+
+}
+
+
+.container-card-favoritos {
+    margin: 2rem auto;
+    min-width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block; 
+    margin-right: 10px; 
+    padding: 1;
+}
+
+.card-img-1 {
+    background-image: url(../img/hamburguesaclasica.webp);
+}
+
+.card-img-2 {
+    background-image: url(../img/hamburguesa_bbq.webp);
+}
+
+.card-img-3 {
+    background-image: url(../img/hamburguesa_de_pavo.webp);
+}
+.card-img-4 {
+    background-image: url(../img/hamburguesa_vegana.webp);
+}
+.card-img-5 {
+    background-image: url(../img/hamburguesa_mexicana.webp);
+}
+.card-container-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card-nombre h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: var(--fuente-titulos);
+}
+
+.card-boton {
+    margin-top: 1rem;
+}
+
+.card-boton-favorito {
+    background-color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.card-boton-favorito:hover {
+    cursor: pointer;
+}
+.favorite-checkbox {
+    display: none; 
+}
+
+.favorite-checkbox:checked + .card-boton-favorito .svg-favorito {
+    fill: var(--color-primario);
+    stroke: var(--color-primario);
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.svg-favorito {
+    color: var(--color-primario);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+
+.container-grid-hamburguesas {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+.container-card-hamburguesas {
+    margin: 2rem auto;
+    width: 85%; 
+}
+
+.card-hamburguesa {
+    width: 80%; 
+    height: auto;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin: 0 3rem;
+    text-align: left;
+}
+.sombra {
+    -webkit-box-shadow: 10px 10px 40px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px -25px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px -25px rgba(0,0,0,0.75);
+}
+.card-image-hamburguesa {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.posicion-derecha {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px; 
+}
+.imagen-hamburgesa {
+    width: 100%;
+    height: auto;
+}
+.card-hamburguesa-nombre p {
+    font-size: 1.5rem;
+    text-align:left;
+    line-height: 2rem;
+}
+.card-hamburguesa-nombre h2 {
+    font-size: 2rem;
+    font-family: var(--fuente-titulos);
+}
+.card-hamburguesa-precio p {
+    font-size: 2.2rem;
+}
+.container-footer {
+    margin-top: 2rem;
+    background-color: var(--color-negro);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+
+@media (min-width: 700px) {
+    .imagen-hamburgesa {
+        width: 30rem;
+        height: auto;
+    }
+    .container-card-hamburguesas {
+        width: 30rem;
+        margin-bottom: 3rem;
+    }
+    .container-card-hamburguesas {
+        margin: 0 2rem;
+    }    
+    .container-grid-hamburguesas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        
+    }
+    .svg-favorito {
+        width: 5rem;
+        height: 5rem;
+    }
+    .card-hamburguesa-nombre h2 {
+        font-size: 2rem;
+    }
+    .card-hamburguesa-nombre p {
+        font-size: 1.8rem;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .imagen-hamburgesa {
+        width: 30rem;
+        height: auto;
+    }
+    .container-card-hamburguesas {
+        width: 30rem;
+        margin-bottom: 3rem;
+    }
+    .container-card-hamburguesas {
+        margin: 0 2rem;
+    }    
+    .container-grid-hamburguesas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem;
+        margin-left: 3rem;
+    }
+    .svg-favorito {
+        width: 5rem;
+        height: 5rem;
+    }
+    .card-hamburguesa-nombre h2 {
+        font-size: 2rem;
+    }
+    .card-hamburguesa-nombre p {
+        font-size: 1.5rem;
+    }
+}
